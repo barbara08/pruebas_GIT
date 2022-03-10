@@ -14,6 +14,19 @@
 -No pueden subir más pasajeros que los máximos admitidos y no pueden bajar más de los que hay.
 
 */
+/*
+class Bus {
+    constructor(matricula, capacidad){
+        this.matricula = matricula;
+        this.capacidad = capacidad;
+        this.pasajeros = 0;
+    }
+    subir(pasajeros){
+        this.pasajeros += pasajeros;;
+    }
+}
+*/
+
 function bus (capacidad,conductor) {
     this.capacidad = capacidad;
     this.pasajeros = 0;
