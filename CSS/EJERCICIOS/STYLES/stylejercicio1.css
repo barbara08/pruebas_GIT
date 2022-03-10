@@ -1,0 +1,45 @@
+
+#white{
+    color: white;
+}
+#red{
+    color: red;
+}
+
+#green{
+    color: green;
+}
+
+#blue{
+    color: blue;
+}
+
+
+/* Una opción para el color de fondo*/
+/*
+td + td{
+    background-color: red;
+}
+td+td+td{
+    background-color: green;
+}
+td+td+td+td{
+    background-color: blue;
+}
+
+*/
+/*Otra forma de poner el color de fondo */
+td:first-child{
+    background-color: white;
+}
+td:nth-child(2){
+    background-color: red;
+}
+td:nth-child(3){
+    background-color: green;
+}
+
+td:last-child{ /* se puede poner también td:nth-child(4)*/
+    background-color: blue;
+}
+

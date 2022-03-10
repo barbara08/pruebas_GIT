@@ -1,0 +1,104 @@
+
+/*
+https://www.w3schools.com/cssref/css_selectors.asp
+css selectors 
+
+etiqueta{
+    estilo de la eqiqueta, todas las etiquetas tendran el mismo estilo
+}
+.clase{
+    estilo de la clase, todas las etiquetas que tengan esta clase, presentarán los mismos estilos
+    se puede compartir
+}
+#id{
+    la etiqueta que tenga este id, presentara los estilos que definamos aqui
+    no se comparte
+}
+
+element.element
+*/
+/*
+a{
+    color: red;
+}
+.enlace{
+    color: green;
+}
+*/
+#parrafo{
+    font-size: large;
+    background-color: deeppink;
+}
+
+div p {    /* padre es div y p es el hijo */
+    color: brown;   
+}
+
+div > p{
+    color: yellow;
+}
+/*elemento padding*/
+/*el margen que hay en el interior*/
+
+#caja2 {
+    padding-top: 10px;  /* la distancia que hay desde el elemento hasta el borde, la caja se hace mas grande*/
+    padding-bottom: 10px;
+    background-color: pink;
+}
+
+/* margin es lo mismo que padding pero al revés*/
+#caja3 {  /*margin: top right bottom left;   poner el valor*/
+    margin: 15px;
+    background-color: blueviolet;
+}
+/*selector de pseudo elemento*/   
+/*a:visited no funciona y puede ser por el live server y aparece siempre como visitado*/
+a:hover {
+    color: green;
+}
+
+/*Jeraquía:
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, :before
+*/
+/*   eje x  es horizontal    eje y es vertical*/
+
+/*FLEX  BOX 
+por defectors son rows y queremos que se mueva en el eje x
+*/
+
+
+#container{
+    display: flex;   
+   
+    justify-content: center;  
+} 
+/* JUEGO  RANA    https://flexboxfroggy.com/#es */
+ /* para que se mueva en el eje x  justify-content   
+    justify-content: space-evenly ;   para que tenga la misma distancia
+    
+
+*/
+    /* para que se mueva en el eje y   align-items
+    align-items: flex-end;  
+    flex-end
+    flex-start  
+    baseline
+    stretch 
+    */
+
+    /*
+    flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.*/
+
+/*felx-direction
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba.
+*/

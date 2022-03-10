@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cheetshett</title>
+    <!--los metas de arriba salen por defectos, los de abajo ya los ponemos nosotros-->
+    
+    <!--<meta name="robots" content="noindex">  -->
+    <!-- no se pone porque esta es por defoult, por lo que habrá que poner la de arriba-->
+    <!-- <meta name="robots" content="index"> -->
+   <!-- <meta name="robots" content="follow"> --> <!--igual que noindex-->   
+    <!--
+    <meta name="description" content="academia de programacion web"> 
+    <meta name="author" content="reelevant">
+    -->
+    <!-- controlar cache de este docuemnto -->
+   <!-- <meta http-equiv="cache-control" content="no-cache" > -->
+    <!-- para que no encuentre en google, redirigir a otro docuemnto -->
+    <!-- Se comenta esta etiqueta para que no nos afecte:
+        <meta http-equiv="refresh" content="S" >    -->
+<!--
+    <style>
+        .container{
+            color:red;
+        }
+    </style>
+-->
+<!--se puede poner pero no se hace lo mejor es ponerlo debajo del body-->
+
+</head>
+<body>
+    <!-- Enlace interno y externo-->
+    <a href="https://www.google.com">Ir a google</a>
+    <a href="index.html">home</a>
+    <!--Linea en blanco-->
+    <br>
+    <!--Linea separadora-->
+    <hr>
+    <!--Títulos / heading-->
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+    <!--Párrafo / -->
+    <p>Se puede usar Lorem ipsun</p>  <!--si selecionamos varias palabra le damos a F1 y ponemos wrap whit ... y después ponemos el nombre de la etiqueta strong / -->
+    <p> Lorem, ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. 
+        Tempora debitis saepe possimus nemo <em>consequuntur natus velit corporis</em> 
+        quae et quos at, libero aliquid, est facilis maiores! Pariatur, saepe deserunt. Sapiente. 
+    </p>
+    <!--etiqueta pre para que respete los márgenes y los espacios que haces, no se usa esta etiqueta-->
+    <pre>orem, ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. 
+        Tempora debitis 
+            saepe possimus nemo <em>consequuntur natus velit corporis</em> 
+        quae et quos at, libero aliquid, 
+                est <em>facilis</em> maiores! Pariatur, saepe deserunt. Sapiente. 
+    </pre>
+    <p> La Molécula preferida de csi cualquier desarrollador es:
+        C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> también conocida como cafeína
+        <br>
+        <var>a</var><sup>2</sup>+<var>b</var><sup>2</sup>
+    </p>
+    <br><hr><br>
+    <!--Contenedor-->
+
+    <nav>
+        <div>
+            <a href="">Enalce 1</a>
+            <a href="">Enlace 2</a>
+        </div>
+        <div>
+            <a href="">Enlace 3<a></a>
+        </div>
+            
+    </nav>
+    <section>
+        <article>
+            <h1>Título del artículo</h1>
+            <p>Contenido del articulo</p>
+        </article>
+    </section>
+    <aside>
+        <p>Menu generalmente lateral</p>
+    </aside>
+
+    <footer>
+        <p>Pie de página</p>
+        <address>Málaga, 29009</address>
+    </footer>
+    <!--el div es un contenedor, elemento del bloque genérico-->
+    <div>
+        <p>Contenedor genérico</p>
+    </div>
+
+    <br><hr><br>
+    <!--Listas -->
+    <ul> <!--   >li*3  -->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3
+            <ul>
+                <li>Elemento
+                    <ul>
+                        <li>Elemento</li>
+                    </ul>
+                </li>  
+            </ul>
+        </li>
+
+    </ul>
+    <ol start="500"> 
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!--Tablas -->
+    <table>
+        <thead> <!--cabecera -->
+            <tr> <!--Fila -->
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jhon Doe</td> <!--Table Data td -->
+                <td>jdoe@email.com</td>
+                <td>48</td>
+            </tr> 
+            <tr>   
+                <td>Alumno Reelevant</td> <!--Table Data td -->
+                <td>ac@reelevant.com</td>
+                <td>34</td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <br><hr><br>
+    <!--Formularios-->
+    <form action="https://google.es" method="get">
+        <div>
+            <label for="nameInput">Nombre:</label>
+            <!--userName => lo que escriba dentro del cuadro esto le llega al servidor
+            placeholder es lo que sale dentro del cuadro
+            value es lo que escribe el usuario-->
+            <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre" value="">
+        </div>
+        <br>
+        <div>
+            <label for="lastNameInput">Apellidos:</label>
+            <input type="text" id="lastNameInput" name="userlastName" placeholder="Introduce tus apellidos" value="">
+        </div>
+        <br>
+        <div>
+            <label for="emaildInput">Email:</label>
+            <input type="email" id="emailInput" name="useremail" placeholder="Introduce tu email" value="">
+        </div>
+        <br>
+        <div>
+            <label for="passwordInput">Passwword:</label>
+            <input type="password" id="passwordInput" name="userpassword" placeholder="Introduce tu contraseña" value="">
+        </div>
+        <br>
+        <div>
+            <label for="masagedInput">Mensaje:</label>
+            <textarea name="usermasage" id="masageInput" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="genderInput">Género</label>
+            <select name="genderInput" id="genderInput">
+                <option value="" hidden></option>
+                <option value="female">Femenino</option>
+                <option value="male">Masculino</option>
+                <option value="otro">Otros</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="ageInput">Edad:</label>
+            <input type="number" name="ageInput" id="ageInput" min="0" max="120">
+        </div>
+       
+        <br>
+        <div>
+            <label for="birthdayInput">Fecha de nacimiento:</label>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <!-- los names tienen que tener el mismo nombre en este caso hemos puesto gender-->
+            <legend>Género:</legend>
+                 <br>
+        
+            <div>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Otro</label>
+            </div>
+
+        </div>
+        <br>
+        
+        <div>
+            <label for="avatar">Selecciona una foto de perfil:</label>
+            <input type="file" name="avatarInput" id="avatar" accept="image/png, image/jpeg">
+        </div>
+        <br>
+        <div>
+            <label for="satisfaction">Elige tu grado de satisfacción:</label>
+            <input type="range" min="0" max="10" step="0.01" /> 
+        </div>
+        <br>
+        
+        <label for=""></label>
+        <input type="checkbox" id="checkbox" value="firstCheckbox">
+        Este es mi primer checkbox
+        <br>
+        <div>
+            <input type="time"> <br>
+            <input type="week" name="" id="">
+        </div>
+       
+        <br>
+        <div>
+            <label for="carBrand">Marcas de coche</label>
+            <input type="text" id="carBrandInput" name="carBrand" list="carBrandList">
+            <datalist id="carBrandList">
+                <!--Value tiene que estar escrito igual que el nombre que sale en pantalla-->
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Ford">Ford</option> 
+                <option value="Wolwagen">Wolwagen</option>    
+            </datalist>
+        </div>
+        <fieldset id="personaInfo" disabled> <!--ponemos disabled para que no se repita los datos-->
+            <legend>Información personal</legend>
+            <!--He copiado Nombre y apellidos de arriba para ver el efecto de fieldset-->
+            <div>
+                <label for="nameInput">Nombre:</label>
+                <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre" value="">
+            </div>
+            <br>
+            <div>
+                <label for="lastNameInput">Apellidos:</label>
+                <input type="text" id="lastNameInput" name="userlastName" placeholder="Introduce tus apellidos" value="">
+            </div>
+        </fieldset>
+
+        <label for="fuellevel">Nivel de gasolina</label>
+        <meter min="0" max="100" value="60" id="fuellevel"></meter> 
+        <br>
+        <label for="progress">Progreso</label>
+        <progress max="100" value="33" id="progresss" ></progress>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    <br> <br>
+    <!-- Multimedia / Media-->
+    
+    <img src="../imagenes/gatito.jpg" alt="" width="200"> 
+    <!-- se pone width o height para que la imagen salga bien-->
+    <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/6124cf315cafe8c3101f8bab/perro-slide_0.jpg" alt="" width="200">
+    <!-- para los videos-->
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2rqPXt0T6cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- porque no se ven videos es porque tienen que tener la carpeta enbed-->
+
+<br><br>
+<!-- con esto sale puntitos por debajo de FP y dejamos el curso aparece lo que pone en title-->
+<abbr title="FormacionProfesional">FP</abbr>
+<br><br>
+<q>
+  Sale con comillas
+</q>
+<!-- si ponemos .container sale la etiqueta de abajo-->
+<div class="container"></div>
+
+</body>
+
+<script src="../JS/index.js"></script>
+
+<script src="../JS/cheetsheet.js"></script>
+
+</html>

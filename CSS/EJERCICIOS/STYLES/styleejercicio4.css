@@ -1,0 +1,23 @@
+/*
+https://developer.mozilla.org/es/docs/Web/CSS/:nth-child
+*/
+td{
+    text-align: right;
+}
+th{
+    text-align: center;
+}
+
+tr:hover td{
+    background-color: yellow;
+}
+tr:nth-child(even){    /* LAS FILAS PARES*/ /* LAS FILAS IMPARES SERRÍA CON ODD EN VEZ DE EVEN*/
+    background-color: aqua;
+}
+/*  ESTAS DOS HACEN OTRA COSA QUE NO NOS PIDE EL EJERCICIO
+tr:nth-child(2){
+    background-color: green;
+}
+tr:nth-child(4){
+    background-color: green;
+}*/

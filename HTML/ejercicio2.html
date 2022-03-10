@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    
+<h2>Ejercicio 2</h2>
+<h1>Formulario de Registro</h1>
+<form action="">
+    <input type="submit" value="Enviar">
+    <br> <br>
+    
+    <label for="nombreInput">Nombre:</label>
+    <input type="text" placeholder="Elon" name="userName" id="nombreInput">
+       
+    <label for="apellidoInput">Apellido:</label>
+    <input type="text" placeholder="Musk" name="lastName" id="apellidoInput">
+    
+    <br> <br>
+   
+    <div>
+        <label for="ageInput">Edad:</label>
+        <input type="number" name="ageInput" id="ageInput" min="0" max="80" value="40">
+    </div>
+
+   <br> <br>
+
+    <div>
+        <label for="emailInput">Email:</label>
+        <input type="email" name="emailInput" id="emailInput" placeholder="nombre@email.com">
+    </div>
+
+    <br><br>
+    
+    <div>
+        <label for="passwordInput">Password:</label>
+        <input type="password" name="passwordInput" id="passwordInput">
+    </div>
+
+    <br><br>
+    <div>
+        <input type="radio" name="gender" value="female" id="female"> 
+        <label for="female">Mujer</label>
+    </div>
+    <div>
+        <input disabled type="radio" name="gender" value="male" id="male">
+        <label for="male">Hombre</label>
+    </div>
+    <div>
+        <input disabled type="radio" name="gender" value="other" id="other">
+        <label for="other">Otro</label>
+    </div>
+
+    <br><br>
+
+    <div>
+        <label for="paisInput" >País:</label>
+        <input type="text" placeholder="Introduce tu país" id="paisInput" name="paisInput" list="countrylist">
+        <datalist id="countrylist">
+            <option value="España">España</option> 
+            <option value="Reino Unidos">Reino Unidos</option> 
+            <option value="Francia">Francia</option> 
+        </datalist>
+    </div>
+
+    <br><br>
+
+    <div>
+        <label for="lenguajeprogramacionInput">Lenguaje de Programación:</label>
+        <select name="lenguajeprogramacion" id="lenguajeprogramacionInput">
+        <datalist id="lenguajeprogramacionInputlist">
+            <option value="JavaScript">JavaScript</option>  
+            <option value="Python">Python</option>   
+            <option value="C++">C++</option>     
+        </datalist>
+        </select>
+    </div>
+    <br><br>
+    <!--en type radio el name de input se asocia al for de label (tienen que tener el mismo nombre)
+        y tiene que ser igual para todos-->
+    <div>
+        <input type="radio" name="reelevant" id="reelevant" checked> 
+        <label for="relevant">Reelevant</label>
+    </div>    
+    <div>
+        <input type="radio" name="academiaInput" id="academia2Input" disabled> 
+        <label for="academiaInput">Academia 2</label>
+    </div>
+
+    <div> 
+        <input type="radio" name="academiaInput" id="academia3Input" disabled> 
+        <label for="academiaInput">Academia 3</label>
+    </div>
+    <br><br>
+    
+    <div>
+        <input type="Checkbox" id="spam" value="spam">
+        <label for="spam">Acepto recibir cientos de miles de correos irrelevantes</label>
+    </div>
+    <div>
+        <input type="Checkbox" id="terms" value="terms">
+        <label for="terms">Acepto los términos y condiciones</label>
+    </div>
+    <br><br>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Vaciar Formulario">
+    </div>
+
+
+
+
+
+
+</form>
+
+
+</body>
+</html>

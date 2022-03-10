@@ -1,0 +1,48 @@
+/*
+La primera letra de un encabezado de nivel 2 se muestre con un tamaño más grandes.
+El primer párrafo después de cada encabezado de nivel 2 tenga un sangrado 2em en la primera línea.
+Al principio de un enlace se muestre la flecha "→".
+Después de una abreviatura se muestre el significado de la abreviatura.
+*/
+
+h2::first-letter{
+    font-size: xx-large ;
+    color: red;
+}
+/*
+h2 + p::first-line{
+    text-indent: 2em;
+    color: red;
+}
+*/
+
+    h2 + p{
+    text-indent: 2em;
+}
+
+a::before{
+    content: "→";
+}
+
+abbr::before{
+    content:"("attr(title)")";
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
